@@ -29,11 +29,11 @@ const styles = StyleSheet.create({
         fontSize:16
     },
     btn:{
-        backgroundColor:'#e1e1f8',
+        backgroundColor:'#643fa1',
         padding:9,
     },
     btnText:{
-        color:'darkslateblue',
+        color:'#fff',
         fontSize:20,
         textAlign:'center'
     }

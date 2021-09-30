@@ -10,7 +10,7 @@ const Item = ({item, deleteItem, itemDone}) => {
             <Text style={item.picked ? styles.listItemTextDone : styles.listItemText}>
                 {item.name}
             </Text>
-            <Icon name='remove' size={20} color='firebrick' onPress={() => deleteItem(item.id)} />
+            <Icon name='remove' size={30} color='firebrick' onPress={() => deleteItem(item.id)} />
         </View>
         <Text style={styles.listItemTextAdded}>
        Added: {item.createdAt}
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
 
     listItem: {
       padding:15,
-      backgroundColor:'#f8f8f8',
+      backgroundColor:'#f8f7f7',
       borderBottomWidth:1,
       borderColor:'#eee'
     },
