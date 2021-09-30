@@ -17,15 +17,11 @@ const App = () => {
        }
        return item;
     });
-
-
     setFakeData(data)
- 
   }
 
   const addItem = text => {
     if(!text){
-
       Alert.alert(
         "Error",
         "Please enter an Item",
@@ -33,10 +29,9 @@ const App = () => {
          { text: "OK" }
         ]
       );
-
     }
     else{
-      setFakeData(items => ([{id:uuid(), name:text, createdAt:new Date().toDateString()},...items]));
+      setFakeData(items => ([{id:uuid(), name:text, createdAt:new Date().toDateString(), picked:false},...items]));
     }
     
   }
@@ -50,7 +45,7 @@ const App = () => {
       <Text style={styles.headerText}>My Shopping List</Text>
     </View>
     <AddItem addItem={addItem} />
-    <FlatList style={styles.listContainer} data={fakeData} renderItem={renderItems} />
+    <FlatList data={fakeData} renderItem={renderItems} />
     </View>
   )
 }
@@ -58,7 +53,7 @@ const App = () => {
 export default App
 
 const styles = StyleSheet.create({
-  meainContainer:{
+  mainContainer:{
     flex:1
   },
   header:{

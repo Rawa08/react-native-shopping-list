@@ -39,9 +39,10 @@ const styles = StyleSheet.create({
         fontSize:18,
     },
     listItemTextDone:{
-        fontSize:18,
-        textDecorationLine:'line-through',
-        backgroundColor:'green'
+        fontSize:14,
+        textDecorationLine: 'line-through',
+        color:'red'
+     
     },
     listItemTextAdded: {
       fontSize:10,
